@@ -84,7 +84,10 @@ public class Logic1
 	old35(10) --> true
 	old35(15) --> false */
 	public boolean old35(int n) {
-	
+		if(n % 3 == 0 && n % 5 == 0){
+			return false;
+		} else if(n%3 == 0 || n%5 == 0){return true;}
+		else {return false;}
 	}
 
 
@@ -96,7 +99,8 @@ public class Logic1
 	specialEleven(23) --> true
 	specialEleven(24) --> false */
 	public boolean specialEleven(int n) {
-	  
+	  if(n%11 == 0 || n%11 == 1){ return true; }
+		else {return false;}
 	}
 
 
@@ -106,7 +110,10 @@ public class Logic1
 	more20(21) --> true
 	more20(42) --> true */
 	public boolean more20(int n) {
-	  
+		if(n % 20 == 1 || n % 20 == 2){
+			return true;
+		} else {return false;}
+		
 	}
 
 
